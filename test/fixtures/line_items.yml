@@ -3,7 +3,9 @@
 one:
   product: two
   cart: one
+  # price: 1 # available when done task in playtime (p233)
 
 two:
-  product: two
-  cart: two
+  product: ruby
+  cart: one
+  # price: 1 # available when done task in playtime (p233)
