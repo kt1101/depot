@@ -19,7 +19,7 @@ class Pago
     else
       raise "Unknown payment_method #{payment_method}"
     end
-    sleep 3 unless Rails.evn.test?
+    sleep 3 unless Rails.env.test?
     Rails.logger.info "Done Processing Payment"
     OpenStruct.new(succeeded?: true)
   end
