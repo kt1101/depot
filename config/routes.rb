@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   end
   
   # get 'sessions/new'
-  # get 'sessions/create'
-  # get 'sessions/destroy'
+  get 'sessions/create'
+  get 'sessions/destroy'
+
+  resources :support_requests, only: %i[ index update ]
+
   resources :users
   resources :products
 
