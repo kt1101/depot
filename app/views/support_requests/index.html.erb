@@ -42,7 +42,7 @@
                       class: "depot_form") do |form| %>
           <div class="field">
             <%= form.label :response, "Write Response" %>
-            <%= form.rich_text_area :response, id: :support_request_response %>
+            <%= form.rich_text_area :response, id: :support_request_response, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
           </div>
           <div class="actions">
             <%= form.submit "Send Response" %>
