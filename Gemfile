@@ -76,3 +76,7 @@ end
 
   # Add ActiveModel serializers XML
 gem 'activemodel-serializers-xml'
+
+gem "pg", "~> 1.5", :group => :production
+
+gem "dockerfile-rails", ">= 1.6", :group => :development
